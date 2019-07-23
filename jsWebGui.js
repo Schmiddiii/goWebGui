@@ -14,15 +14,15 @@ for (i = 0; i < views.length; i++) {
 function setUpOnClick(view) {
     view.onclick = () => {
         let xhl = new XMLHttpRequest()
-        xhl.open('PUT', obj.responsePort, true)
+        xhl.open('PUT', goWebGuiObj.responsePort, true)
         xhl.onreadystatechange = () => {
             if (xhl.readyState == 4 && xhl.status == 200) {
                 let response = xhl.response
-                obj.responseHandler(JSON.parse(response))
+                goWebGuiObj.responseHandler(JSON.parse(response))
             }
         }
 
-        let extraData = obj.getExtras(view.id)
+        let extraData = goWebGuiObj.getExtras(view.id)
 
         xhl.send(JSON.stringify({ id: view.id, extras: extraData }))
     }
