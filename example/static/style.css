@@ -1,0 +1,21 @@
+body{
+    background: linear-gradient(to right bottom, rgb(255, 255, 255), rgba(0, 255, 179, 0.445))
+}
+
+.click{
+    border-radius:1em;
+    border:red;
+    border-style:solid;
+    margin:1em
+}
+
+.data_btn_concat{
+    border-radius:1em;
+    border:orange;
+    border-style:solid;
+    margin:1em
+}
+
+#result{
+    margin:1em
+}
