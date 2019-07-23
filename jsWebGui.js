@@ -1,5 +1,5 @@
 
-let obj = {
+let goWebGuiObj = {
     responsePort: document.URL + "backend/respond",
     getExtras: getDataByClassName,
     responseHandler: handleResponse
