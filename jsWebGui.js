@@ -36,7 +36,6 @@ function getDataByClassName(classname) {
     for (i = 0; i < views.length; i++) {
         let v = views.item(i)
         if (v.nodeName == "INPUT") {
-            console.log(v.type)
             switch(v.type){
                 case "text":
                     result.push(v.value)
