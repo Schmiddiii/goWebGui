@@ -36,7 +36,13 @@ function getDataByClassName(classname) {
     for (i = 0; i < views.length; i++) {
         let v = views.item(i)
         if (v.nodeName == "INPUT") {
-            result.push(v.value)
+            switch(v.type){
+                case "text":
+                    result.push(v.value)
+                    break
+                case "checkbox":
+                    result.push(v.checked.toString())
+            }
         }
     }
 
@@ -45,5 +51,4 @@ function getDataByClassName(classname) {
 
 function handleResponse(message){
     console.log(message)
-    console.log("Id: "+message.id)
 }
