@@ -2,14 +2,17 @@
 let goWebGuiObj = {
     responsePort: document.URL + "backend/respond",
     getExtras: getDataByClassName,
-    responseHandler: handleResponse
+    responseHandler: handleResponse,
+    init: ()=>{
+        let views = document.getElementsByClassName("click")
+
+        for (i = 0; i < views.length; i++) {
+            setUpOnClick(views.item(i))
+        }
+    }
 }
 
-let views = document.getElementsByClassName("click")
 
-for (i = 0; i < views.length; i++) {
-    setUpOnClick(views.item(i))
-}
 
 function setUpOnClick(view) {
     view.onclick = () => {
