@@ -30,4 +30,4 @@ In your Javascript you just have to override the `goWebGuiObj.responseHandler` f
 
 ## More information
 
-To learn more about the usage of this programm see the examples implementing string-concatination or a tick-tack-toe example.
+To learn more about the usage of this programm see the examples implementing string-concatination or a tick-tack-toe example. Another, more indepth example is the [goChatBot](https://github.com/Schmiddiii/goChatBot).
